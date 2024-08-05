@@ -26,5 +26,6 @@ jobs:
           push: true
           context: .
           tags: gulmammadov/ms-user
-
+          cache-from: |
+            gulmammadov/ms-user:cache
 

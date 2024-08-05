@@ -24,6 +24,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
+          context: .
           tags: gulmammadov/ms-user
 
 

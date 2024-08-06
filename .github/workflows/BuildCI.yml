@@ -20,6 +20,9 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Permission Accept
+        run: chmod +x gradlew
+
       - name: JaCoCo Code Coverage Report
         id: jacoco_reporter
         uses: PavanMudigonda/jacoco-reporter@v5.0

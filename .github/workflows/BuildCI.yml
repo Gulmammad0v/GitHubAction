@@ -1,5 +1,5 @@
 name: Build Workflow
-on: [push]
+on: [ push ]
 permissions: write-all
 jobs:
   BuildAndTest:
@@ -22,9 +22,6 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
-
-      - name: List build directory contents
-        run: ls -R build
 
       - name: JaCoCo Code Coverage Report
         id: jacoco_reporter

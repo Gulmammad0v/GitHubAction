@@ -1,6 +1,8 @@
 name: Docker
-on: [ push ]
-#permissions: write-all
+on:
+  push:
+    branches:
+      - master
 jobs:
   PushDockerHub:
     runs-on: ubuntu-latest
